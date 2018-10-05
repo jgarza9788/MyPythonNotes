@@ -62,12 +62,14 @@
 #
 # say_hi("Justin")
 
-#Start Function
-def average(num1,num2,num3):
-    return (float(num1) + float(num2) + float(num3)) /3
+# #Start Function
+# def average(num1,num2,num3):
+#     return (float(num1) + float(num2) + float(num3)) /3
+#
+#
+# #End Function
+#
+# avg = average(0.1,10.1,5.5)
+# print(avg)
 
 
-#End Function
-
-avg = average(0.1,10.1,5.5)
-print(avg)
