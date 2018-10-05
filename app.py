@@ -1,3 +1,5 @@
+# Just following along with the tutorial...nothing important
+
 # print("Yo...what up")
 
 # print("      /|")
@@ -72,4 +74,23 @@
 # avg = average(0.1,10.1,5.5)
 # print(avg)
 
+is_male = False
+
+if is_male:
+    print("You are male")
+else:
+    print("You are female")
+
+
+is_male = True
+is_tall = False
+
+if is_male and is_tall:
+    print("You are male and tall")
+elif is_male and not(is_tall):
+    print("you are male, but not tall")
+elif not(is_male) and is_tall:
+    print("you are a tall female")
+else:
+    print("You must be female")
 
