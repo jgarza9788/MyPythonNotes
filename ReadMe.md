@@ -120,11 +120,78 @@ elif not(is_male) and is_tall:
 else:
     print("You must be female")
 ```
+```
+def max_num(num0,num1,num2):
+    if num0 >= num1 and num0 >= num2:
+        return num0
+    elif num1 >= num0 and num1 >= num2:
+        return  num1
+    else:
+        return num2
+
+    
+print(max_num(1,0.1,0.2))
+```
+
+#### Compare Operators  
+```
+==   
+>=  
+<=  
+!=  
+```
+
+### Dictionary   
+uses key-value pair  
+
+```
+monthConversions = {
+"Jan":"January",
+"Feb":"Febuary",
+"Mar":"March",
+"Apr":"April",
+"Jun":"June",
+"Jul":"July",
+"Aug":"August",
+"Sep":"September",
+"Oct":"October",
+"Nov":"November",
+"Dec":"December"
+}
+
+print(monthConversions["Mar"])
+print(monthConversions.get("Dec"))
+print(monthConversions.get("Luv"))
+```
+
+### While Loop
+```
+i = 0
+while i < 10:
+    print(i)
+    i+=1
+
+
+print("done with loop")
+```
+
+### For Loop
+```
+for letter in "Justin Garza":
+    print(letter);
+```
+```
+friends = ["Nic","Marie","Chair","Lamp"]
+for friend in friends:
+    print("I love " + friend + ".")
+```
+```
+for index in range(100):
+    print(index)
+```
 
 
 ## More online Tutorials
-
-
 
 ### [Learn Python - Full Course for Beginners](https://www.youtube.com/watch?v=rfscVS0vtbw)
 
