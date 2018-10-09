@@ -147,13 +147,71 @@
 #     print(i)
 #     i+=1
 
-for letter in "Justin Garza":
-    print(letter);
+# for letter in "Justin Garza":
+#     print(letter);
 
 
-friends = ["Nic","Marie","Chair","Lamp"]
-for friend in friends:
-    print("I love " + friend + ".")
+# friends = ["Nic","Marie","Chair","Lamp"]
+# for friend in friends:
+#     print("I love " + friend + ".")
 
-for index in range(100):
-    print(index)
+# for index in range(100):
+#     print(index)
+
+
+# number_grid = [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9],
+#     [0]
+# ]
+
+# for row in number_grid:
+#     for col in row:
+#         print(row)
+#         print(col)
+
+
+# doLoop = 1
+
+# While doLoop == 1:
+#     try:
+#         number = int(input("enter a number"))
+#         print(number)
+#         doLoop = 0
+#     except:
+#         print("that's no number")
+#         doLoop = 1
+
+
+# try:
+#     value = 10/0
+#     number = int(input("enter a number: "))
+#     print(number)
+# except ZeroDivisionError:
+#     print("only Chuck Norris can divide by zero")
+# except ValueError:
+#     print("that's no number")
+
+loop = 1
+
+while loop == 1:
+    try:
+        number = int(input("enter a number: "))
+        print(number)
+        loop = 0
+    except:
+        print("that's no number")
+        loop = 1
+
+
+loop = True
+
+while loop == True:
+    try:
+        number = int(input("enter a number: "))
+        print(number)
+        loop = False
+    except:
+        print("that's no number")
+        loop = True

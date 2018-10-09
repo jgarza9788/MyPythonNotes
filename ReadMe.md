@@ -13,12 +13,19 @@ Currentlly 3.70
 
 [PyCharm](https://www.jetbrains.com/pycharm/)
 
+>other IDEs may require additional setups
+
 
 ## Frequently Used Code
 
 ### Comment
 ```
 # this is a comment
+
+'''
+another way to do a comment
+'''
+
 ```
 
 ### Print Text
@@ -189,6 +196,65 @@ for friend in friends:
 for index in range(100):
     print(index)
 ```
+### 2D Lists
+```
+number_grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [0]
+]
+
+print(number_grid[0][0])
+print(number_grid[0][1])
+print(number_grid[0][2])
+print(number_grid[1][0])
+print(number_grid[1][1])
+print(number_grid[1][2])
+print(number_grid[2][0])
+print(number_grid[2][1])
+print(number_grid[2][2])
+```
+
+### nested for loop
+```
+number_grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [0]
+]
+
+for row in number_grid:
+    for col in row:
+        print(row)
+        print(col)
+```
+
+### Try / Except
+```
+try:
+    value = 10/0
+    number = int(input("enter a number: "))
+    print(number)
+except ZeroDivisionError:
+    print("only Chuck Norris can divide by zero")
+except ValueError:
+    print("that's no number")
+```
+>keep asking for a number until number is given
+```
+loop = True
+
+while loop == True:
+    try:
+        number = int(input("enter a number: "))
+        print(number)
+        loop = False
+    except:
+        print("that's no number")
+        loop = True
+```
 
 
 ## More online Tutorials
@@ -232,6 +298,7 @@ for index in range(100):
 [(4:12:37) Inheritance](https://www.youtube.com/watch?v=rfscVS0vtbw&t=15157s)  
 [(4:20:43) Python Interpreter](https://www.youtube.com/watch?v=rfscVS0vtbw&t=15643s)  
 
-
+### Reading and Writing Files (IO)
+[link](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 
 ### [Python Tutorial for Beginners Part 1 | Python Programming Tutorial | Python Basics](https://www.youtube.com/watch?v=2uCXIbkbDSE)
