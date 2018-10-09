@@ -314,6 +314,8 @@ file.close()
 ```
 
 ### Modules & Pip
+>modules are also refered to as packages
+
 
 module file (usefulTool.py)
 ```
@@ -349,6 +351,41 @@ these are built into the python lanuage. and these are within the lib folder of 
 **external module:**  
 these must downloaded into your python project.
 
+#### using pip  
+
+##### registering pip
+pip is installed with python, but inorder to use it you have to register it with CMD using the following command.
+
+```
+set PATH=%PATH%;C:\...\Python\Python37-32\Scripts
+```
+>you'll need to change the path of course  
+
+##### installing with pip
+now you use pip with the following command
+```
+pip install [module name]
+```
+```
+pip install python-docx
+```
+
+files will be stored with your python install.
+```
+C:\Users\JGarza\AppData\Local\Programs\Python\Python37-32\Lib\site-packages
+```
+##### removing modules/packages
+
+use this to remove packages
+```
+pip uninstall [module name]
+```
+
+##### list all packages
+use this to see all installed modules
+```
+pip list
+```
 
 ### Classes & Objects
 
