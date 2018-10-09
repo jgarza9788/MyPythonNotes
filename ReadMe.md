@@ -256,9 +256,110 @@ while loop == True:
         loop = True
 ```
 
+### Reading Files
+```
+## modes
+# r = read
+# w = write
+# a = append --add only
+# r+ = read and Write
+
+## you will need to change the path 
+file = open("D:\Scripts\ArchivR\ArchivR.vbs","r")
+
+print("readable: " + str(file.readable()))
+
+# read entire file
+print(file.read())
+
+# read each line
+lineNum = 1
+for line in file.readlines():
+    print(str(lineNum) + " " + line)
+    lineNum += 1
+
+file.close()
+```
+
+### Writing to Files
+```
+## modes
+# r = read
+# w = write
+# a = append --add only
+# r+ = read and Write
+
+# you will need to change the path 
+# "r" converts to a raw string ...instead of using unicode
+file = open(r"C:\Users\JGarza\Desktop\TextFile.txt","a")
+file.write("new Text")
+
+# \n is newline
+file.write("new Text\n more text")
+
+file.close()
+```
+```
+## modes
+# r = read
+# w = write
+# a = append --add only
+# r+ = read and Write
+
+file = open(r"C:\Users\JGarza\Desktop\TextFile.txt","w")
+
+file.write("hello, it's bob from accounting")
+
+file.close()
+```
+
+### Modules & Pip
+
+module file (usefulTool.py)
+```
+import random
+
+feet_in_mile = 5280
+metters_in_kilometer = 1000
+beatles = ["John Lennon","Paul McCartney","George Harrison","Ringo Star"]
+
+def get_file_ext(filename):
+    return filename[filename.index(".") + 1:]
+
+def roll_dice(num):
+    return random.randint(1,num)
+
+```
+
+main file (app.py)
+```
+import usefulTools
+
+print(usefulTools.feet_in_mile)
+print(usefulTools.beatles)
+```
+
+more modules can be found at  
+[Python Module Index](https://docs.python.org/3/py-modindex.html)
+
+
+**internal module:**  
+these are built into the python lanuage. and these are within the lib folder of your python project.
+
+**external module:**  
+these must downloaded into your python project.
+
+
+### Classes & Objects
+
+### Object Functions
+
+### Inheritance
+
+### Python Interpreter
 
 ## More online Tutorials
-
+___
 ### [Learn Python - Full Course for Beginners](https://www.youtube.com/watch?v=rfscVS0vtbw)
 
 #### chapters
@@ -298,7 +399,9 @@ while loop == True:
 [(4:12:37) Inheritance](https://www.youtube.com/watch?v=rfscVS0vtbw&t=15157s)  
 [(4:20:43) Python Interpreter](https://www.youtube.com/watch?v=rfscVS0vtbw&t=15643s)  
 
-### Reading and Writing Files (IO)
-[link](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 
+___
+### [Reading and Writing Files (IO)](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+
+___
 ### [Python Tutorial for Beginners Part 1 | Python Programming Tutorial | Python Basics](https://www.youtube.com/watch?v=2uCXIbkbDSE)

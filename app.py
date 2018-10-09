@@ -193,25 +193,84 @@
 # except ValueError:
 #     print("that's no number")
 
-loop = 1
+# loop = 1
 
-while loop == 1:
-    try:
-        number = int(input("enter a number: "))
-        print(number)
-        loop = 0
-    except:
-        print("that's no number")
-        loop = 1
+# while loop == 1:
+#     try:
+#         number = int(input("enter a number: "))
+#         print(number)
+#         loop = 0
+#     except:
+#         print("that's no number")
+#         loop = 1
 
 
-loop = True
+# loop = True
 
-while loop == True:
-    try:
-        number = int(input("enter a number: "))
-        print(number)
-        loop = False
-    except:
-        print("that's no number")
-        loop = True
+# while loop == True:
+#     try:
+#         number = int(input("enter a number: "))
+#         print(number)
+#         loop = False
+#     except:
+#         print("that's no number")
+#         loop = True
+
+
+## modes
+# r = read
+# w = write
+# a = append --add only
+# r+ = read and Write
+
+# ## you will need to change the path 
+# file = open("D:\Scripts\ArchivR\ArchivR.vbs","r")
+
+# print("readable: " + str(file.readable()))
+
+# # read entire file
+# print(file.read())
+
+# # read each line
+# lineNum = 1
+# for line in file.readlines():
+#     print(str(lineNum) + " " + line)
+#     lineNum += 1
+
+# file.close()
+
+
+## modes
+# r = read
+# w = write
+# a = append --add only
+# r+ = read and Write
+
+# # you will need to change the path 
+# # "r" converts to a raw string ...instead of using unicode
+# file = open(r"C:\Users\JGarza\Desktop\TextFile.txt","a")
+# file.write("new Text")
+
+# # \n is newline
+# file.write("new Text\n more text")
+
+# file.close()
+
+
+## modes
+# r = read
+# w = write
+# a = append --add only
+# r+ = read and Write
+
+# file = open(r"C:\Users\JGarza\Desktop\TextFile.txt","w")
+
+# file.write("hello, it's bob from accounting")
+
+# file.close()
+
+
+import usefulTools
+
+print(usefulTools.feet_in_mile)
+print(usefulTools.beatles)
