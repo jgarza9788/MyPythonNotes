@@ -313,6 +313,28 @@ file.write("hello, it's bob from accounting")
 file.close()
 ```
 
+### Run CMD/Terminal commands
+```
+import os
+os.system('dir c:\\')
+```
+
+### Clear Terminal
+```
+import os
+os.system('cls')
+```
+
+### using Time
+```
+>>> import datetime
+>>> datetime.datetime.now()
+datetime(2009, 1, 6, 15, 8, 24, 78915)
+
+>>> print(datetime.datetime.now())
+2018-07-29 09:17:13.812189
+```
+
 ### Modules & Pip
 >modules are also refered to as packages
 
@@ -388,12 +410,31 @@ pip list
 ```
 
 ### Classes & Objects
+coming soon
 
 ### Object Functions
+coming soon
 
 ### Inheritance
+coming soon
 
 ### Python Interpreter
+coming soon
+
+
+## loop through folder/files - recursive
+```
+import os
+
+movieDir ='D:\Share\Movies'
+
+def getMovieList():
+    for subdir, dirs, files in os.walk(movieDir):
+        for file in files:
+            print(os.path.join(subdir, file))
+```
+
+
 
 ## More online Tutorials
 ___
