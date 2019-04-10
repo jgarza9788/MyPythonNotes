@@ -19,7 +19,7 @@ Currentlly 3.70
 ## Frequently Used Code
 
 ### Comment
-```
+```python
 # this is a comment
 
 '''
@@ -29,32 +29,32 @@ another way to do a comment
 ```
 
 ### Print Text
-```
+```python
 print("this is text")
 ```
 
 ### convert to string
-```
+```python
 str(number)
 ```
 
 ### convert to integer
-```
+```python
 int(number)
 ```
 
 ### convert to float
-```
+```python
 float(number)
 ```
 
 ### get input
-```
+```python
 num1 = input("give me a number: ")
 ```
 
 ### Lists
-```
+```python
 friends = ["James","Jimmy","Billy"]
 print(friends[0])
 print(friends[1])
@@ -67,19 +67,19 @@ print(friends[0,7])
 ```
 
 ### functions
-```
+```python
 def say_hi():
     print("Hi people!")
 
 say_hi()
 ```
-```
+```python
 def say_hi(name):
     print("Hello " + name)
 
 say_hi("Justin")
 ```
-```
+```python
 def average(num1,num2,num3):
     return (float(num1) + float(num2) + float(num3)) /3
 
@@ -88,7 +88,7 @@ print(avg)
 ```
 
 ### if-else statement
-```
+```python
 is_male = False
 
 if is_male:
@@ -96,7 +96,7 @@ if is_male:
 else:
     print("You are female")
 ```
-```
+```python
 is_male = False
 is_tall = True
 
@@ -105,7 +105,7 @@ if is_male or is_tall:
 else:
     print("You are no male nor tall")
 ```
-```
+```python
 is_male = True
 is_tall = True
 
@@ -114,7 +114,7 @@ if is_male and is_tall:
 else:
     print("You are either not male or not tall or both")
 ```
-```
+```python
 is_male = True
 is_tall = False
 
@@ -127,7 +127,7 @@ elif not(is_male) and is_tall:
 else:
     print("You must be female")
 ```
-```
+```python
 def max_num(num0,num1,num2):
     if num0 >= num1 and num0 >= num2:
         return num0
@@ -141,7 +141,7 @@ print(max_num(1,0.1,0.2))
 ```
 
 #### Compare Operators  
-```
+```python
 ==   
 >=  
 <=  
@@ -151,7 +151,7 @@ print(max_num(1,0.1,0.2))
 ### Dictionary   
 uses key-value pair  
 
-```
+```python
 monthConversions = {
 "Jan":"January",
 "Feb":"Febuary",
@@ -172,7 +172,7 @@ print(monthConversions.get("Luv"))
 ```
 
 ### While Loop
-```
+```python
 i = 0
 while i < 10:
     print(i)
@@ -183,21 +183,21 @@ print("done with loop")
 ```
 
 ### For Loop
-```
+```python
 for letter in "Justin Garza":
     print(letter);
 ```
-```
+```python
 friends = ["Nic","Marie","Chair","Lamp"]
 for friend in friends:
     print("I love " + friend + ".")
 ```
-```
+```python
 for index in range(100):
     print(index)
 ```
 ### 2D Lists
-```
+```python
 number_grid = [
     [1,2,3],
     [4,5,6],
@@ -217,7 +217,7 @@ print(number_grid[2][2])
 ```
 
 ### nested for loop
-```
+```python
 number_grid = [
     [1,2,3],
     [4,5,6],
@@ -232,7 +232,7 @@ for row in number_grid:
 ```
 
 ### Try / Except
-```
+```python
 try:
     value = 10/0
     number = int(input("enter a number: "))
@@ -243,7 +243,7 @@ except ValueError:
     print("that's no number")
 ```
 >keep asking for a number until number is given
-```
+```python
 loop = True
 
 while loop == True:
@@ -257,7 +257,7 @@ while loop == True:
 ```
 
 ### Reading Files
-```
+```python
 ## modes
 # r = read
 # w = write
@@ -282,7 +282,7 @@ file.close()
 ```
 
 ### Writing to Files
-```
+```python
 ## modes
 # r = read
 # w = write
@@ -299,7 +299,7 @@ file.write("new Text\n more text")
 
 file.close()
 ```
-```
+```python
 ## modes
 # r = read
 # w = write
@@ -314,19 +314,19 @@ file.close()
 ```
 
 ### Run CMD/Terminal commands
-```
+```python
 import os
 os.system('dir c:\\')
 ```
 
 ### Clear Terminal
-```
+```python
 import os
 os.system('cls')
 ```
 
 ### using Time
-```
+```python
 >>> import datetime
 >>> datetime.datetime.now()
 datetime(2009, 1, 6, 15, 8, 24, 78915)
@@ -335,12 +335,54 @@ datetime(2009, 1, 6, 15, 8, 24, 78915)
 2018-07-29 09:17:13.812189
 ```
 
+### Web Scraping 
+urllib, html, http, web 
+
+#### get html 
+```python
+import urllib3
+http = urllib3.PoolManager()
+
+def getHTML(url):
+    response = http.request('GET', url)
+    return response.data
+
+if __name__ == "__main__":
+    print(getHTML("www.google.com"))
+
+```
+```python
+# with username and password
+import urllib3
+http=urllib3.PoolManager()
+fields={'username':'abc','password':'xyz'}
+r=http.request('GET',url,fields)
+```
+```python
+
+```
+
+
+#### get data from web service (api)
+```python
+
+import requests
+r =  requests.get("https://api.github.com/user", auth=('username','password'))
+print(r.status_code)
+print(r.headers['content-type'])
+print(r.encoding)
+print(r.text)
+print(r.json())
+```
+
+
+
 ### Modules & Pip
 >modules are also refered to as packages
 
 
 module file (usefulTool.py)
-```
+```python
 import random
 
 feet_in_mile = 5280
@@ -356,12 +398,22 @@ def roll_dice(num):
 ```
 
 main file (app.py)
-```
+```python
 import usefulTools
 
 print(usefulTools.feet_in_mile)
 print(usefulTools.beatles)
 ```
+
+>if the file is in another directory use this
+```python
+# some_file.py
+import sys
+sys.path.insert(0, '/path/to/application/app/folder')
+
+import file
+```
+
 
 more modules can be found at  
 [Python Module Index](https://docs.python.org/3/py-modindex.html)
@@ -372,6 +424,13 @@ these are built into the python lanuage. and these are within the lib folder of 
 
 **external module:**  
 these must downloaded into your python project.
+
+
+#### only execute code if this is the main file
+```python
+if __name__ == "__main__":
+    #your code here
+```
 
 #### using pip  
 
@@ -434,7 +493,16 @@ def getMovieList():
             print(os.path.join(subdir, file))
 ```
 
+## get newest file in folder
+[LINK](https://stackoverflow.com/questions/39327032/how-to-get-the-latest-file-in-a-folder-using-python)
+```python
+import glob
+import os
 
+list_of_files = glob.glob('/path/to/folder/*') # * means all if need specific format then *.csv
+latest_file = max(list_of_files, key=os.path.getctime)
+print latest_file
+```
 
 ## More online Tutorials
 ___
