@@ -1,24 +1,17 @@
 # ReadMe
 
 
-## Install
-
-### Python
+## Python
 [Python Download Site](https://www.python.org/downloads/)
 
 get the newest version of python
 Currentlly 3.70
 
-### Text Editor or IDE
-
-[PyCharm](https://www.jetbrains.com/pycharm/)
-
->other IDEs may require additional setups
-
+---
 
 ## Frequently Used Code
 
-### Comment
+## Comment
 ```python
 # this is a comment
 
@@ -28,32 +21,32 @@ another way to do a comment
 
 ```
 
-### Print Text
+## Print Text
 ```python
 print("this is text")
 ```
 
-### convert to string
+## convert to string
 ```python
 str(number)
 ```
 
-### convert to integer
+## convert to integer
 ```python
 int(number)
 ```
 
-### convert to float
+## convert to float
 ```python
 float(number)
 ```
 
-### get input
+## get input
 ```python
 num1 = input("give me a number: ")
 ```
 
-### Lists
+## Lists
 ```python
 friends = ["James","Jimmy","Billy"]
 print(friends[0])
@@ -66,7 +59,7 @@ friends.extend(newFriends)
 print(friends[0,7])
 ```
 
-### functions
+## functions
 ```python
 def say_hi():
     print("Hi people!")
@@ -87,7 +80,7 @@ avg = average(0.1,10.1,5.5)
 print(avg)
 ```
 
-### if-else statement
+## if-else statement
 ```python
 is_male = False
 
@@ -140,7 +133,7 @@ def max_num(num0,num1,num2):
 print(max_num(1,0.1,0.2))
 ```
 
-#### Compare Operators  
+## Compare Operators  
 ```python
 ==   
 >=  
@@ -148,7 +141,7 @@ print(max_num(1,0.1,0.2))
 !=  
 ```
 
-### Dictionary   
+## Dictionary   
 uses key-value pair  
 
 ```python
@@ -171,7 +164,7 @@ print(monthConversions.get("Dec"))
 print(monthConversions.get("Luv"))
 ```
 
-### While Loop
+## While Loop
 ```python
 i = 0
 while i < 10:
@@ -182,7 +175,7 @@ while i < 10:
 print("done with loop")
 ```
 
-### For Loop
+## For Loop
 ```python
 for letter in "Justin Garza":
     print(letter);
@@ -196,7 +189,7 @@ for friend in friends:
 for index in range(100):
     print(index)
 ```
-### 2D Lists
+## 2D Lists
 ```python
 number_grid = [
     [1,2,3],
@@ -216,7 +209,7 @@ print(number_grid[2][1])
 print(number_grid[2][2])
 ```
 
-### nested for loop
+## nested for loop
 ```python
 number_grid = [
     [1,2,3],
@@ -231,7 +224,7 @@ for row in number_grid:
         print(col)
 ```
 
-### Try / Except
+## Try / Except
 ```python
 try:
     value = 10/0
@@ -256,7 +249,7 @@ while loop == True:
         loop = True
 ```
 
-### Reading Files
+## Reading Files
 ```python
 ## modes
 # r = read
@@ -281,7 +274,7 @@ for line in file.readlines():
 file.close()
 ```
 
-### Writing to Files
+## Writing to Files
 ```python
 ## modes
 # r = read
@@ -313,19 +306,19 @@ file.write("hello, it's bob from accounting")
 file.close()
 ```
 
-### Run CMD/Terminal commands
+## Run CMD/Terminal commands
 ```python
 import os
 os.system('dir c:\\')
 ```
 
-### Clear Terminal
+## Clear Terminal
 ```python
 import os
 os.system('cls')
 ```
 
-### using Time
+## using Time
 ```python
 >>> import datetime
 >>> datetime.datetime.now()
@@ -335,10 +328,10 @@ datetime(2009, 1, 6, 15, 8, 24, 78915)
 2018-07-29 09:17:13.812189
 ```
 
-### Web Scraping 
+## Web Scraping 
 urllib, html, http, web 
 
-#### get html 
+### get html 
 ```python
 import urllib3
 http = urllib3.PoolManager()
@@ -363,7 +356,7 @@ r=http.request('GET',url,fields)
 ```
 
 
-#### get data from web service (api)
+### get data from web service (api)
 ```python
 
 import requests
@@ -377,7 +370,7 @@ print(r.json())
 
 
 
-### Modules & Pip
+## Modules & Pip
 >modules are also refered to as packages
 
 
@@ -426,15 +419,15 @@ these are built into the python lanuage. and these are within the lib folder of 
 these must downloaded into your python project.
 
 
-#### only execute code if this is the main file
+### only execute code if this is the main file
 ```python
 if __name__ == "__main__":
     #your code here
 ```
 
-#### using pip  
+### using pip  
 
-##### registering pip
+#### registering pip
 pip is installed with python, but inorder to use it you have to register it with CMD using the following command.
 
 ```
@@ -442,7 +435,7 @@ set PATH=%PATH%;C:\...\Python\Python37-32\Scripts
 ```
 >you'll need to change the path of course  
 
-##### installing with pip
+#### installing with pip
 now you use pip with the following command
 ```
 pip install [module name]
@@ -455,29 +448,29 @@ files will be stored with your python install.
 ```
 C:\Users\JGarza\AppData\Local\Programs\Python\Python37-32\Lib\site-packages
 ```
-##### removing modules/packages
+#### removing modules/packages
 
 use this to remove packages
 ```
 pip uninstall [module name]
 ```
 
-##### list all packages
+#### list all packages
 use this to see all installed modules
 ```
 pip list
 ```
 
-### Classes & Objects
+## Classes & Objects
 coming soon
 
-### Object Functions
+## Object Functions
 coming soon
 
-### Inheritance
+## Inheritance
 coming soon
 
-### Python Interpreter
+## Python Interpreter
 coming soon
 
 
@@ -506,9 +499,9 @@ print latest_file
 
 ## More online Tutorials
 ___
-### [Learn Python - Full Course for Beginners](https://www.youtube.com/watch?v=rfscVS0vtbw)
+## [Learn Python - Full Course for Beginners](https://www.youtube.com/watch?v=rfscVS0vtbw)
 
-#### chapters
+### chapters
 [(0:00) Introduction](https://www.youtube.com/watch?v=rfscVS0vtbw&t=0s)  
 [(1:45) Installing Python & PyCharm](https://www.youtube.com/watch?v=rfscVS0vtbw&t=105s)  
 [(6:40) Setup & Hello World](https://www.youtube.com/watch?v=rfscVS0vtbw&t=400s)  
@@ -547,7 +540,7 @@ ___
 
 
 ___
-### [Reading and Writing Files (IO)](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+## [Reading and Writing Files (IO)](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 
 ___
-### [Python Tutorial for Beginners Part 1 | Python Programming Tutorial | Python Basics](https://www.youtube.com/watch?v=2uCXIbkbDSE)
+## [Python Tutorial for Beginners Part 1 | Python Programming Tutorial | Python Basics](https://www.youtube.com/watch?v=2uCXIbkbDSE)
