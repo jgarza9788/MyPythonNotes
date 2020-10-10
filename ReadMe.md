@@ -59,6 +59,24 @@ friends.extend(newFriends)
 print(friends[0,7])
 ```
 
+### sort List
+```python
+numbers = [1, 3, 4, 2] 
+  
+# Sorting list of Integers in ascending 
+numbers.sort() 
+  
+print(numbers) 
+```
+
+### remove m from List
+```python
+m = 5
+_List = [1,2,3,4,5]
+_list = [i for i in _list if i != m] 
+```
+
+
 ## functions
 ```python
 def say_hi():
@@ -496,6 +514,16 @@ list_of_files = glob.glob('/path/to/folder/*') # * means all if need specific fo
 latest_file = max(list_of_files, key=os.path.getctime)
 print latest_file
 ```
+
+## install package (python 3.6+)
+```cmd
+py -m pip install [Package_to_install]
+```
+example:
+```cmd
+py -m pip install numpy
+```
+
 
 ## More online Tutorials
 ___
